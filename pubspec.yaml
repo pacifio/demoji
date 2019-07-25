@@ -1,0 +1,10 @@
+name: demoji
+version: 1.0.0
+authors:
+  - Adib Mohsin <adibmohsin.root@gmail.com>
+description: A dart library for cli emojis
+homepage: https://github.com/pacifio/demoji
+environment:
+  sdk: ">=2.0.0-dev.36.0 <3.0.0"
+dev_dependencies:
+  test: ">=0.12.18"
