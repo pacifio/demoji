@@ -2,6 +2,7 @@ import 'dart:core' as core;
 import 'dart:io';
 import 'dart:convert';
 
+var readme = '';
 var mock = '''
 /*
   THIS IS A FILE WHICH CONTAINS ALL THE EMOJI CODE
@@ -30,10 +31,16 @@ void main() {
         /// Returns ${v['char']}
         static const $k = '${v['char']}';\n
       ''';
+      readme += "| ```Demoji.$k``` | ${v['char']} |\n";
     });
     mock += "}";
     new File('./emoji.dart').writeAsString(mock).whenComplete(() {
-      core.print("Job done");
+      new File('../../README.md').readAsString().then((rm) {
+        rm += readme;
+        new File('../../README.md').writeAsString(rm).whenComplete(() {
+          core.print("Job done");
+        });
+      });
     });
   });
 }
