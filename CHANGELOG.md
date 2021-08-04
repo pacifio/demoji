@@ -1,3 +1,6 @@
+## 2.0.0
+* Added null safety
+
 ## 1.0.1
 
 * Added example and added better docs

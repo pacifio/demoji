@@ -1,13 +1,5 @@
-/*
-  THIS IS A FILE WHICH CONTAINS ALL THE EMOJI CODE
-  THIS FILE IS AUTO GENERATED SO IT IS RECOMMENDED NOT TO EDIT
-*/
-
-/// The main Demoji class which contains all the emojis
-///
-/// You can use things like Demoji.grinning which will return -> 😀
-/// This library contains 1500+ emojis for multiplatform use
-/// Note that this hasn't been tested on flutter
+/// `Demoji` class which returns emoji accessed by static properties
+/// e.g `Demoji.grinning` returns 😀
 class Demoji {
   /// Returns 💯
   static const one_hundred = '💯';

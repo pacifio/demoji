@@ -1,21 +1,29 @@
 # Demoji
 
-A dart library for cli emojis . It contains over 1500+ emojis for using in your cli app . Support for flutter is coming .
+A dart library with over 1500+ emojis for Your projects .
 
-# Example
+## Example
+
 Here is an example using demoji tool
+
 ```dart
 import 'package:demoji/demoji.dart';
 
 void main() {
   print(Demoji.grin); // return 😁
-  // If you want to use more emojis , chech out the list below
 }
 ```
 
-# Emojis
+## Emojis
 
 For the full list of emojis , please check out [here](https://github.com/pacifio/demoji/blob/master/emoji.md)
 
+## TODO
 
-> Created by Adib Mohsin
+- [x] Null safety
+- [ ] Categorized support
+- [ ] Update to latest `emoji.json`
+
+## Contributors
+
+- [kenriortega](https://github.com/kenriortega)
